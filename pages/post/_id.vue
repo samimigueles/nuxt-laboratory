@@ -9,7 +9,7 @@
     <aside>
       <h3>Posts you might enjoy</h3>
       <ul>
-        <li v-for="related in relatedPosts">
+        <li v-for="related in relatedPosts" :key="related">
           <nuxt-link :to="{ name: `post-id`, params: { id: related.id } }">
             {{ related.title }}
           </nuxt-link>

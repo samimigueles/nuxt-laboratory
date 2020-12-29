@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div class="logo">
-      <h3><nuxt-link :to="{ name: 'index' }">Next Fundamentals</nuxt-link></h3>
+      <h3><nuxt-link :to="{ name: 'index' }">Nuxt Laboratory</nuxt-link></h3>
       <span class="subheader"> A Nuxt course </span>
     </div>
   </nav>
