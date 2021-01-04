@@ -2,7 +2,7 @@
   <nav class="nav">
     <div class="logo">
       <h3><nuxt-link :to="{ name: 'index' }">Nuxt Laboratory</nuxt-link></h3>
-      <span class="subheader"> A Nuxt course </span>
+      <span class="subheader"> A Nuxt experiment </span>
     </div>
   </nav>
 </template>

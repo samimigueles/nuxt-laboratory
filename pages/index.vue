@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <Logo />
+      <Chart />
       <h1 class="title">nuxt-fundamentals</h1>
       <div class="links">
        <nuxt-link v-for="post in posts" :to="{name: 'post-id', params:{id: post.id}}" :key="post.id" class="button--grey">
@@ -14,9 +15,11 @@
 
 <script>
 import Logo from '../components/Logo'
+import Chart from '../components/Chart'
 export default {
   components:{
     Logo,
+    Chart
   },
   head(){
     return {
