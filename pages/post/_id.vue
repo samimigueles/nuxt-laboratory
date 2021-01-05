@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <RandomChart />
+    
     <article>
       <h1 class="title">{{ post.title }}</h1>
       <p>
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import RandomChart from '../../components/RandomChart'
+
 export default {
   data() {
     return {
