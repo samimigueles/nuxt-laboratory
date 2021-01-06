@@ -50,8 +50,8 @@
       }
     },
     mounted () {
-      if (this.$route.params.package) {
-        this.packageI = this.$route.params.package
+      if (this.$route.params.packageI) {
+        this.packageI = this.$route.params.packageI
         this.requestData()
       }
     },
@@ -66,7 +66,7 @@
           return
         }
         this.resetState()
-        axios.get(`https://api.npmjs.org/downloads/range/${this.period}/${this.package}`)
+        axios.get(`https://api.npmjs.org/downloads/range/${this.period}/${this.packageI}`)
           .then(response => {
             console.log(response.data)
             this.downloads = response.data.downloads.map(download => download.downloads)
@@ -81,7 +81,7 @@
           })
       },
       setURL () {
-        history.pushState({ info: `npm-stats ${this.package}` }, this.package, `/#/${this.package}`)
+        history.pushState({ info: `npm-stats ${this.packageI}` }, this.packageI, `/#/${this.packageI}`)
       }
     }
   }

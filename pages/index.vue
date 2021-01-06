@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <Logo />
+      <line-chart-container />
       <h1 class="title">nuxt-fundamentals</h1>
       <div class="links">
        <nuxt-link v-for="post in posts" :to="{name: 'post-id', params:{id: post.id}}" :key="post.id" class="button--grey">
@@ -15,10 +16,12 @@
 <script>
 import Logo from '../components/Logo'
 
+import LineChartContainer from '../components/LineChartContainer.vue';
 
 export default {
   components:{
-    Logo
+    Logo,
+    LineChartContainer
   },
   head(){
     return {
