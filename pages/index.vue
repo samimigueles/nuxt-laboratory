@@ -14,9 +14,10 @@
 </template>
 
 <script>
+import LineChartContainer from '../components/LineChartContainer.vue';
 import Logo from '../components/Logo'
 
-import LineChartContainer from '../components/LineChartContainer.vue';
+
 
 export default {
   components:{

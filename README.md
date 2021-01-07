@@ -1,4 +1,4 @@
-# nuxt-fundamentals
+# nuxt-laboratory
 
 ## Build Setup
 
